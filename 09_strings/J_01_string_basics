@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class J_01_string_basics
+ {
+    public static void main(String[] args) {
+        // string Declaration
+        Scanner sc = new Scanner(System.in);
+
+        String Name = "Riku";
+        System.out.println("Your Name is : " + Name);
+        System.out.println("Enter a Name :");
+        String InputName = sc.nextLine();
+        System.out.println("Enter Name is : " + InputName);
+
+        // concatenation
+        String FirstName = "Riku";
+        String SecondName = "Sahu";
+        String FullName = FirstName + " " + SecondName;
+        System.out.println("Your Full Name is : " + FullName);
+
+        // Mesuring length of a string using '.length()'
+        System.out.println("Length of full name is " + FullName.length());
+
+        // Print one by one character in a string using 'charAt(int index)'
+        for (int i = 0; i < FullName.length(); i++) {
+            System.out.println(FullName.charAt(i));
+        }
+
+        // compare two string using 'string1.compareTo(string2)'
+        // 1. s1 > s2 then it return +ve value .
+        // 2. s1 = s2 then it return 0 .
+        // 3. s1 < s2 then it return -ve value.
+        if (InputName.compareTo(FullName) == 0) {
+            System.out.println("strings are equal.");
+        } else
+            System.out.println("string are not equal.");
+        // String s1 = "Riku Sahu";
+        // String s2 = "Riku Sahu";
+        // Some case this method is fail like when we compare InputName with FullName it
+        // show not equal.
+        // if (s1 == s2) {
+        // System.out.println("strings are equal.");
+        // } else
+        // System.out.println("string are not equal.");
+
+        // Print a part of a string using 'substring(begining index , ending index)'
+        // Here Begining index is exclusive(include) and ending index is non
+        // exclusive(not include).
+        // When we not take ending index it autometically take last index.
+        String sentence = "Mission Impossible";
+        String partOfString = sentence.substring(10, sentence.length());
+        System.out.println(partOfString);
+
+        // string are immutable that meanswhen we make a string then we are not change
+        // or delete any things in that string . 
+        
+    }
+
+}
