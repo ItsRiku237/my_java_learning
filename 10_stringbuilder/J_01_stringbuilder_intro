@@ -1,0 +1,38 @@
+public class J_01_stringbuilder_intro
+ {
+    // string builder
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("The Persuit of Happiness");
+        System.out.println(sb);
+
+        // string.charAt(index)
+        System.out.println(sb.charAt(4));
+
+        // set char at any index using 'string.setCharAt(index,'character')'
+        sb.setCharAt(19, 'y');
+        System.out.println(sb);
+
+        // Insert a character in a string using 'string.insert(index,'character')'
+        sb.insert(0, 'R');
+        System.out.println(sb);
+
+        // Delete the any extra character in a string using 'string.delete(starting
+        // index,ending index)'
+        // Here ending index is non exclusive.
+        sb.delete(0, 1);
+        System.out.println(sb);
+
+        // adding char in a string using 'string.append("char")'
+        // In case of append it changes in one string that reason it take less time
+        // and give more efficient.
+        StringBuilder sb1 = new StringBuilder("H");
+        sb1.append("e");// str = str + "e";
+        sb1.append("l");// str = str + "l";
+        sb1.append("l");
+        sb1.append("o");
+        System.out.println(sb1);
+
+        // sb1.length()
+        System.out.println(sb1.length());
+    }
+}
