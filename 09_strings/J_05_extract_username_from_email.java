@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class J_05_extract_username_from_email
+ {
+    // Q8. Input an email from the user. You have to create a username from the
+    // email
+    // by deleting the part that comes after ‘@’. Display that username to the user.
+    // Example :
+    // email = “apnaCollegeJava@gmail.com” ; username = “apnaCollegeJava”
+    // email = “helloWorld123@gmail.com”; username = “helloWorld123”
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a email :");
+        String email = sc.nextLine();
+        String userName = "";
+
+        for (int i = 0; i < email.length(); i++) {
+            if (email.charAt(i) == '@') {
+                break;
+            } else {
+                userName += email.charAt(i);
+            }
+        }
+        System.out.println("User Name of this email is " + userName);
+    }
+}
