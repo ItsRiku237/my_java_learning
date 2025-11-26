@@ -1,0 +1,44 @@
+public class J_01_java_operators_intro
+ {
+    // Operators and Number System
+    public static void main(String[] args) {
+        // Arithmetic Operators
+        // ==> Binary -> + , - , * , / , %(modulo)
+        // ==> Unary -> Pre increment/decrement(++a ,--a) ,Post increment/decrement
+        // (a++,a--)
+
+        // -> Pre increment(++a ,--a)
+        // first change value then use value.
+        int a = 10;
+        int b = 0;
+        b = ++a;
+        System.out.println(a);// a = 11
+        System.out.println(b);// b = 11
+
+        // -> Post increment (a++,a--)
+        // first use value then change value.
+        int c = 10;
+        int d = 0;
+        d = c++;
+        System.out.println(c);// a = 11
+
+        // Relational Operators -> == , != , > , < , >= , <=
+        // output is a Boolean value (True or False)
+
+        // Logical Operators
+        // ==> &&(AND) -> Both statement are true
+        // ==> ||(OR) -> any one statement is true
+        // ==> !(NOT) -> Both statement true
+
+        // Bitwise Operators -> &(Binary AND) ,|(Binary OR)
+        // -> ^ (Binary XOR) when similar value it returns False and when diff value it
+        // returns True.
+        // -> ~ (Binary ones complement) Reverse the value .
+        // -> << (Binary left shift) shift one byte left and add 0 in the space (N<<i)
+        // -> >> (Binary Right shift) shift one byte right and add 0 in the space (N>>i)
+        // Here True = 1 , False = 0 
+
+        //Assignment Operators
+        // = , += (a+=b , a = a+b) , -= , *= , /= 
+    }
+}
