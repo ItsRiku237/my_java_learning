@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class J_29th_program {
+public class J_09_PrimeNumberCheck {
     // Qs. Print if a number is prime or not (Input n from the user).
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -45,4 +45,5 @@ public class J_29th_program {
         }
         sc.close();
     }
+
 }
